@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập 02</title>
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 30px;
+    }
+
+    /* KHUNG TỔNG */
+    .box {
+      border: 2px solid #4aa3df;
+      padding: 20px;
+      width: 920px;
+      margin: auto;
+    }
+
+    /* TIÊU ĐỀ */
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      background: #f37021;
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 15px;
+    }
+
+    /* GRID 3 CỘT */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    /* CARD */
+    .card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 13px;
+      margin: 5px 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #444;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+
+    /* INFO ICON */
+    .info {
+      font-size: 12px;
+      margin-top: 8px;
+      color: #333;
+    }
+
+    .info i {
+      color: #c0392b;
+      margin-right: 6px;
+    }
+
+    .info div {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+
+  <div class="title">KHÓA HỌC SẮP KHAI GIẢNG</div>
+
+  <div class="grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?1">
+      <h3>LẬP TRÌNH VIÊN QUỐC TẾ</h3>
+      <p>
+        Chương trình đào tạo chuẩn quốc tế về CNTT, phù hợp với học sinh
+        sinh viên muốn trở thành lập trình viên chuyên nghiệp.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 2 - 2.5 năm</div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?2">
+      <h3>LẬP TRÌNH WEB FULLSTACK</h3>
+      <p>
+        Khóa học phù hợp với người bắt đầu lập trình web hoặc muốn nâng cao
+        kỹ năng backend và frontend.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 6 tháng</div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?3"> <h3>LẬP TRÌNH JAVA FULLSTACK</h3>
+      <p>
+        Phát triển ứng dụng web từ cơ bản đến nâng cao bằng Java, Spring Boot,
+        phù hợp cho người đi làm.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 236 giờ</div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?4">
+      <h3>LẬP TRÌNH PHP & LARAVEL</h3>
+      <p>
+        PHP là một trong các ngôn ngữ thiết kế web mạnh nhất.
+        Khóa học trang bị kiến thức fullstack.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 36 giờ</div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?5">
+      <h3>KHÓA HỌC LẬP TRÌNH .NET</h3>
+      <p>
+        Phát triển ứng dụng web với ASP.NET Core MVC,
+        phù hợp cho sinh viên và người đi làm.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 6.000.000 VND</div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="https://picsum.photos/300/110?6">
+      <h3>LẬP TRÌNH SQL SERVER</h3>
+      <p>
+        Trang bị kiến thức về SQL Server, thiết kế cơ sở dữ liệu,
+        tối ưu truy vấn và quản trị hệ thống.
+      </p>
+
+      <div class="info">
+        <div><i class="fa-solid fa-book"></i> Học phí: 15.000.000 VND</div>
+        <div><i class="fa-solid fa-calendar-days"></i> Khai giảng: 27/02/2024</div>
+        <div><i class="fa-solid fa-clock"></i> Thời lượng: 30 giờ</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
