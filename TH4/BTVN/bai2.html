@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Multi Step Form</title>
+
+<style>
+
+body{
+font-family: Arial;
+padding:20px;
+}
+
+.step{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+input{
+display:block;
+margin-bottom:8px;
+padding:6px;
+width:250px;
+}
+
+.error{
+color:red;
+font-size:13px;
+}
+
+#progress{
+width:100%;
+height:8px;
+background:#ddd;
+margin-bottom:20px;
+}
+
+#progressBar{
+height:8px;
+width:33%;
+background:green;
+}
+
+button{
+margin-right:5px;
+padding:6px 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Đăng ký nhiều bước</h2>
+
+<div id="progress">
+<div id="progressBar"></div>
+</div>
+
+<form id="form">
+
+<!-- STEP 1 -->
+
+<div class="step active" id="step1">
+
+<h3>Bước 1 – Thông tin cá nhân</h3>
+
+<label>Họ tên</label>
+<input type="text" id="fullname">
+<div class="error" id="fullnameError"></div>
+
+<label>Ngày sinh</label>
+<input type="date" id="dob">
+<div class="error" id="dobError"></div>
+
+<label>Giới tính</label>
+
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+
+<div class="error" id="genderError"></div>
+
+<button type="button" onclick="nextStep()">Tiếp theo</button>
+
+</div>
+
+
+<!-- STEP 2 -->
+
+<div class="step" id="step2">
+
+<h3>Bước 2 – Thông tin tài khoản</h3>
+
+<label>Email</label>
+<input type="text" id="email">
+<div class="error" id="emailError"></div>
+
+<label>Mật khẩu</label>
+<input type="password" id="password">
+<div class="error" id="passwordError"></div>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<div class="error" id="confirmError"></div>
+
+<button type="button" onclick="prevStep()">Quay lại</button>
+<button type="button" onclick="nextStep()">Tiếp theo</button>
+
+</div>
+
+
+<!-- STEP 3 -->
+
+<div class="step" id="step3">
+
+<h3>Bước 3 – Xác nhận</h3>
+
+<p id="summary"></p>
+
+<button type="button" onclick="prevStep()">Quay lại</button>
+<button type="submit">Đăng ký</button>
+
+</div>
+
+</form>
+
+<div id="success"></div>
+
+<script src="bai2.js"></script>
+
+</body>
+</html>

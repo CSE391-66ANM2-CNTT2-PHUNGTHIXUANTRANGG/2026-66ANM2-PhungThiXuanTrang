@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đăng Ký</title>
+
+<style>
+
+body{
+font-family: Arial;
+padding:20px;
+}
+
+input{
+display:block;
+margin-bottom:5px;
+padding:6px;
+width:250px;
+}
+
+.error{
+color:red;
+font-size:14px;
+margin-bottom:10px;
+}
+
+.success{
+color:green;
+font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Đăng ký tài khoản</h2>
+
+<form id="registerForm">
+
+<label>Họ và tên</label>
+<input type="text" id="fullname">
+<div class="error" id="fullnameError"></div>
+
+
+<label>Email</label>
+<input type="text" id="email">
+<div class="error" id="emailError"></div>
+
+
+<label>Số điện thoại</label>
+<input type="text" id="phone">
+<div class="error" id="phoneError"></div>
+
+
+<label>Mật khẩu</label>
+<input type="password" id="password">
+<div class="error" id="passwordError"></div>
+
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<div class="error" id="confirmError"></div>
+
+
+<label>Giới tính</label>
+
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+
+<div class="error" id="genderError"></div>
+
+
+<label>
+<input type="checkbox" id="terms"> Đồng ý điều khoản
+</label>
+
+<div class="error" id="termsError"></div>
+
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="successMessage" class="success"></div>
+
+<script src="bai2-1.js"></script>
+
+</body>
+</html>
